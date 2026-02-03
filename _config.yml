@@ -1,13 +1,11 @@
 # Basic Site Info
-title My Portfolio
-description Data Science and Engineering Projects
+title: "My Portfolio"
+description: "Data Science and Engineering Projects"
+theme: null
 
-# This is the Magic part that tells Jekyll to look 
-# into a folder called _projects and treat them as a group
-collections
-  projects
-    output true  # This lets each project have its own separate page
-    permalink projectspath
-
-# Optional If you are using a theme, specify it here
-theme jekyll-theme-minimal
+# Projects Setup
+collections:
+  projects:
+    output: true
+    # Use :title or :name so each file gets a clean URL
+    permalink: /projects/:title/
